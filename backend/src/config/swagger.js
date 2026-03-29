@@ -11,7 +11,14 @@ const options = {
       contact: { name: "API Support", email: "support@example.com" },
     },
     servers: [
-      { url: "http://localhost:5000/api/v1", description: "Development server" },
+      {
+        url: 'https://task-manager-api-if9o.onrender.com/api/v1',
+        description: 'Production server'
+      },
+      {
+        url: 'http://localhost:5000/api/v1',
+        description: 'Development server'
+      },
     ],
     components: {
       securitySchemes: {
